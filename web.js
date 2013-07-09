@@ -8,13 +8,13 @@ app.get('/', function(request, response) {
 });
 
 app.get('/index.html', function(request, response) {
-  response.send('Sending index.html');
+  response.write('Sending index.html');
   fs.readFile('./index.html', function(error, data) {
     if (!error) {
-      response.send(data);
+      response.write(data);
     }
     else {
-      response.send(error);
+      response.write(error);
     }
   });
 });
