@@ -1,4 +1,4 @@
 bitstarter
 ==========
 
-Bitstarter project for my Coursera Startu Engineering class.
+Bitstarter site for the Coursera Startup Engineering class.
