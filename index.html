@@ -8,8 +8,6 @@
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" type="text/css"
           href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css"
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script type="text/javascript" src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script type="text/javascript" src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link rel="stylesheet" type="text/css"
@@ -116,6 +114,13 @@
 
       .footer a {
         color: #CCCCFF;
+      }
+
+      /* AddThis toolbox */
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */
+      div.addthis_toolbox {
+        width: 180px;
+        margin: 0 auto;
       }
     </style>
   </head>
@@ -226,10 +231,16 @@
           <!-- Social -->
 	  <div class="row-fluid">
             <div class="span8 offset2 social">
-              <!-- Social buttons are not included in default Bootstrap. -->
-              <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-              <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-              <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+	      <!-- AddThis Button BEGIN -->
+	      <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+		<a class="addthis_button_preferred_1"></a>
+		<a class="addthis_button_preferred_2"></a>
+		<a class="addthis_button_compact"></a>
+		<a class="addthis_counter addthis_bubble_style"></a>
+	      </div>
+	      <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5201a36579bcd40c"></script>
+	      <!-- AddThis Button END -->
             </div>
           </div>
         </div>
@@ -240,12 +251,12 @@
       <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" alt="How it works" src="/img/BlackOps-480.png">
-        </div>
-        <div class="span5 copy">
+        <div class="span5 offset1 copy">
           <h3>Questions in. Answers out. Magic.</h3>
-	  <p>Magic 'cause we hit it with the mojo stick.</p>
+	  <p>Slices it, dices it, analyzes it, tells you what you got and how bad you got it.</p>
+        </div>
+        <div class="span5 asset">
+          <img class="img-polaroid" alt="How it works" src="/img/BlackOps-480.png">
         </div>
       </div>
 
@@ -279,6 +290,19 @@
               <div id="collapseTwo" class="accordion-body collapse">
                 <div class="accordion-inner">
                   'Cause we hit it with the mojo stick.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse"
+                   data-parent="#accordion2" href="#collapseThree">
+                  Are you freakin' serious?
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+                  Actually, yes. Stay tuned for more information.
                 </div>
               </div>
             </div>
